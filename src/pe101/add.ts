@@ -10,4 +10,7 @@ export class AddMapReduce extends TM {
         arr.forEach((item) => acc = acc +item);
         return acc;
     }
+    hook():void {
+        console.log('Add');
+    }
 }

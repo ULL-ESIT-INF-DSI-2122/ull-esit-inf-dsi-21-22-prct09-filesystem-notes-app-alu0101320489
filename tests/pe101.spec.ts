@@ -28,4 +28,13 @@ describe('Test clase AddMapReduce', () => {
     it ('Funcionamiento de run', () => {
         expect(sub.run([1,2,3])).to.be.deep.equal([-6,-5,-4]);
     });
+    it ('Funcionamiento de hook', () => {
+        expect(sub.hook()).to.be.deep.equal(undefined);
+    });
+    it ('Funcionamiento de hook', () => {
+        expect(mul.hook()).to.be.deep.equal(undefined);
+    });
+    it ('Funcionamiento de hook', () => {
+        expect(add.hook()).to.be.deep.equal(undefined);
+    });
 });
