@@ -25,29 +25,4 @@ export abstract class TM {
     protected abstract reduce(n: number, arr: number[]):number;
 }
 
-export class AddMapReduce extends TM {
-    constructor() {super()}
-    /**
-     * Aplica un reduce sumando
-     * @param acc acumulador
-     * @param arr array
-     */
-    reduce(acc: number, arr: number[]):number {
-        arr.forEach((item) => acc = acc +item);
-        return acc;
-    }
-}
-
-export class MulMapReduce extends TM {
-    constructor() {super()}
-    /**
-     * Aplica reduce multiplicando
-     * @param acc acumulador
-     * @param arr array
-     */
-    reduce(acc: number, arr: number[]):number {
-        arr.forEach((item) => acc = acc * item);
-        return acc;
-    }
-}
 
