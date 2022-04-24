@@ -5,9 +5,9 @@ import {AddMapReduce} from '../src/pe101/add'
 import {MulMapReduce} from '../src/pe101/mul'
 import {SubMapReduce} from '../src/pe101/sub'
 
-let add = new AddMapReduce();
-let mul = new MulMapReduce();
-let sub = new SubMapReduce();
+const add = new AddMapReduce();
+const mul = new MulMapReduce();
+const sub = new SubMapReduce();
 describe('Test clase AddMapReduce', () => {
     
     it ('Funcionamiento de reduce Add', () => {
